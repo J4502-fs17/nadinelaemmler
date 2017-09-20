@@ -3,6 +3,7 @@ html {
 }
 
 p {
+  text-align: center;
     font-family: "Merriweather", Georgia, "Times New Roman", serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
