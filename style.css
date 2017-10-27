@@ -17,7 +17,7 @@ h4 {
 }
 
 p {
-  color: #DEAAAA;
+  color: #5d635e;
   text-align: center;
   font-family: 'Crimson Text', "Times New Roman", serif;
 	font-size: 1rem;
@@ -25,7 +25,7 @@ p {
 }
 
 body{
-	background-color:#A43F3F;
+	background-color:#ebc4b3;
   text-align: center;
 }
 
@@ -34,8 +34,24 @@ body{
     margin: 0 auto;
 }
 
+#container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: stretch;
+flex-flow: wrap;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+@media (min-width:200px)
+{#container
+	 {flex-direction: row;
+justify-content:center;}
+}
+
 #nav {
-    padding: 2S0px;
+    padding: 20px;
 }
 
 #nav li {
@@ -49,7 +65,7 @@ body{
 #nav a:link, a:visited {
 	display:block;
     color: #800101;
-    background-color: #DEAAAA;
+    background-color: #ab7371;
     font-weight: bold;
     text-align:center;
     text-decoration: none;
@@ -63,4 +79,11 @@ body{
 
 img{
   border-style: none;
+		display: block;
+}
+
+@media screen and (min-width: 400px) {
+	img{
+		float:left;
+	}
 }
