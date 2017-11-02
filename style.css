@@ -106,35 +106,37 @@ p {
 	}
 
 
-	.authorbox{
-    width: 100%;
-    grid-area:a;
-  }
-  .section1 {
-    grid-area: b;
+.section1{
+    grid-area: a;
   }
   .image {
-    grid-area: c;
+    grid-area: b;
   }
-  .section2 {
-    grid-area: d;}
+
+	.section2{
+		grid-area: c;
+	}
+
+	.section3{
+		grid-area: d;
+	}
 
 		@media screen and (min-width:1000px){
-			p{
+			article{
 				display: grid;
-				grid-template-columns:800px 1fr 1fr 1fr;
+				grid-template-columns:200px 1fr 1fr 1fr;
 				grid-gap: 20px;
 				grid-template-areas:
-					"a a a"
+					"b a a"
 					"c c d"
 					"c c d"}
 
 		@media screen and (min-width:1200px){
-			p{
+			article{
 				display: grid;
-				grid-template-columns:1000px 1fr 1fr 1fr;
+				grid-template-columns:200px 1fr 1fr 1fr;
 				grid-gap: 20px;
 				grid-template-areas:
-					"a b b "
-					"b b c"
-					"c c d"}
+					"b a c "
+					"b a c"
+					"d d d"}
