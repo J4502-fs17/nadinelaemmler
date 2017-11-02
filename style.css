@@ -2,6 +2,7 @@ html {
 	font-size: 100%
 }
 
+
 h1 {
     font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
     font-size: 3.5rem;
@@ -22,6 +23,7 @@ p {
   font-family: 'Crimson Text', "Times New Roman", serif;
 	font-size: 1rem;
 	line-height: 1rem;
+	width: 80%;
 }
 
 body{
@@ -29,10 +31,7 @@ body{
   text-align: center;
 }
 
-#container{
-    width: 50%;
-    margin: 0 auto;
-}
+
 
 #container{
 display: flex;
@@ -44,17 +43,12 @@ justify-content: space-around;
 align-items: flex-start;
 }
 
-@media (min-width:200px)
-{#container
-	 {flex-direction: row;
-justify-content:center;}
+
+#container {
+    padding: 10px;
 }
 
-#nav {
-    padding: 20px;
-}
-
-#nav li {
+#container li {
     list-style-type: none;
     margin: 4px;
     padding: 0px;
@@ -62,8 +56,8 @@ justify-content:center;}
 	text-decoration: none;
 }
 
-#nav a:link, a:visited {
-	display:block;
+#container a:link, a:visited {
+	display:flex;
     color: #800101;
     background-color: #ab7371;
     font-weight: bold;
@@ -73,17 +67,74 @@ justify-content:center;}
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#nav a:hover, a:active {
+#container a:hover, a:active {
     background-color: #F3E2E2;
 }
 
 img{
-  border-style: none;
+	border-style: none;
 		display: block;
 }
+		@media screen and (min-width: 400px) {
+				img{
+						float:left;
+						}
+						}
 
-@media screen and (min-width: 400px) {
-	img{
-		float:left;
+p {
+	  margin-bottom: 0.5em;
+	  border-bottom:1px solid black;
 	}
-}
+
+	p:last-of-type{
+	  border-bottom: none;
+	}
+
+	@media screen and (min-width:450px){
+	  nav ul{
+	    flex-flow: row;
+	    justify-content: space-between;
+	  }
+	}
+
+	@media screen and (min-width:1000px){
+	  nav ul{
+	    display: flex;
+			flex-flow: row;
+			justify-content: center;
+		}
+	}
+
+
+	.authorbox{
+    width: 100%;
+    grid-area:a;
+  }
+  .section1 {
+    grid-area: b;
+  }
+  .image {
+    grid-area: c;
+  }
+  .section2 {
+    grid-area: d;}
+
+		@media screen and (min-width:1000px){
+			p{
+				display: grid;
+				grid-template-columns:800px 1fr 1fr 1fr;
+				grid-gap: 20px;
+				grid-template-areas:
+					"a a a"
+					"c c d"
+					"c c d"}
+
+		@media screen and (min-width:1200px){
+			p{
+				display: grid;
+				grid-template-columns:1000px 1fr 1fr 1fr;
+				grid-gap: 20px;
+				grid-template-areas:
+					"a b b "
+					"b b c"
+					"c c d"}
