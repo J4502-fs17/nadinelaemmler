@@ -23,7 +23,7 @@ p {
   font-family: 'Crimson Text', "Times New Roman", serif;
 	font-size: 1rem;
 	line-height: 1rem;
-	width: 80%;
+	width: 90%;
 }
 
 body{
@@ -32,12 +32,10 @@ body{
 }
 
 
-
 #container{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-align-content: stretch;
 justify-content: space-around;
 align-items: flex-start;
 }
@@ -123,7 +121,7 @@ p {
 		@media screen and (min-width:1000px){
 			article{
 				display: grid;
-				grid-template-columns:200px 1fr 1fr 1fr;
+				grid-template-columns:300px 1fr 1fr 1fr;
 				grid-gap: 20px;
 				grid-template-areas:
 					"b a a"
@@ -133,9 +131,14 @@ p {
 		@media screen and (min-width:1200px){
 			article{
 				display: grid;
-				grid-template-columns:200px 1fr 1fr 1fr;
+				grid-template-columns:300px 1fr 1fr 1fr;
 				grid-gap: 20px;
 				grid-template-areas:
 					"b a c "
 					"b a c"
 					"d d d"}
+
+body{
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+}
