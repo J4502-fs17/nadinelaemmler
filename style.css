@@ -126,7 +126,8 @@ p {
 				grid-template-areas:
 					"b a a"
 					"c c d"
-					"c c d"}
+					"c c d";}
+				}
 
 		@media screen and (min-width:1200px){
 			article{
@@ -136,5 +137,5 @@ p {
 				grid-template-areas:
 					"b a c "
 					"b a c"
-					"d d d"}
+					"d d d";}
 				}
